@@ -156,4 +156,12 @@ h1 {
     font-size: 3rem;
     margin: .5% ;
 }
+
+/*ARTISTS CONTAINER MIDBOTTOM*/
+.artists-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
 }
