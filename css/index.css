@@ -187,4 +187,15 @@ align-items: center;
 .artist {
     width: 70%;
 }
+.artist img{
+    height: 100%;
+    width: 70%;
+}
+div.bio {
+    font-size: 80%;
+    margin: 5%;
+}
+a{
+    font-size: 115%;
+}
 }
