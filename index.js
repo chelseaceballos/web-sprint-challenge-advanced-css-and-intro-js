@@ -245,19 +245,21 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array){
+// function get20s(array){
+
+  function get20s(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i]["years"].slice(0, 2).includes("19")) {
+        newArr.push(arr[i].name);
+      }
+    }
+    return newArr;
+  }
+  console.log("Task 4", get20s(artists));
   // const newArray= [];
 
-  // for(let i = 0; i <= artists.length; i++){ 
-  //   if(artists[i].years == '1904 - 1998'){ 
-  //     newArray.push(artists[i].name);
-  //     return array.name
-  //   } else if (artist[i].years == '1907 - 1954'){
-  //     return array.name
-  //   }
-  }
-  //  console.log(get20s(artists[5]['name']));
-  //  console.log(get20s(artists[17]['name']));
+
 
  
 
@@ -312,17 +314,20 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array){
-  let newArray =[]
-  for (let i = 0; i < artists.length; i++ ){
-    if(artists.painting >= 100){
-      return artists.name
+
+
+ function lotsOfArt(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].paintings > 100) {
+      result.push(arr[i].name);
     }
   }
 
-}
+  return result;
+} 
 
-console.log(lotsOfArt(artists))
+
 
 
 // 🎨🎨 STRETCH 🎨🎨//
