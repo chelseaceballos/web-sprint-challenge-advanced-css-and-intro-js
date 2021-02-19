@@ -30,11 +30,11 @@ Please answer the following questions below, you may edit the readme file to inc
     Scalable units of measurement (%, rem, vh for height), semantic html, and filled in alt attributes for when an image is not able to load or the viewer is visually impaired.
 
 3. How would you explain the concept of a variable to someone new to programming?
-You can think of variables as containers, these containers store specific types of data. 
-var cows = 10
-let chickens = 5
-const dog = 1
-in this example you can see that each variable has an assigned numerical value. Now we can say "how many animals are there in that farm?" and we would add (cows + chickens + dog) = 16
+    You can think of variables as containers, these containers store specific types of data. 
+    var cows = 10
+    let chickens = 5
+    const dog = 1
+    in this example you can see that each variable has an assigned numerical value. Now we can say "how many animals are there in that farm?" and we would add (cows + chickens + dog) = 16
 
 4. What is the purpose of using functions in code?
 we add a function to a code to make the code reusable and more efficient.
@@ -47,13 +47,13 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
-NOTE: Tests will run for the JavaScript portion of this challenge only
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test:watch` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+1. xFork the repo
+2. xClone your forked version of the repo
+3. xcd into your repo and create a branch with your first and last name
+NOTE: xTests will run for the JavaScript portion of this challenge only
+4. xopen the terminal in your vs code and type `npm install`
+5. xnext type `npm run test:watch` in your terminal
+6. xComplete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
