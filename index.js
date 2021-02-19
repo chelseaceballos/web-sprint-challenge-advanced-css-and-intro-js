@@ -218,6 +218,7 @@ console.log(artists[3].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
 artists[9].name = {name: "Vincent Van Gogh"};
 console.log(artists[9].name);
 
@@ -231,7 +232,6 @@ console.log(artists[9].name);
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, number) {
-  /*Your Code Here*/
   return `the artist at index ${array[number].id} is ${array[number].name}`
 }  
 console.log(getArtistByIndex(artists, 0));
@@ -245,9 +245,20 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(array){
+  const newArray= [];
+
+  for(let i = 0; i <= artists.length-1; i++){ 
+    if(artists[i].years >= 1840 && artists[i].years <= 1999){ 
+      newArray.push(artists[i].name);
+      return array.name
+    }
+  }
+   console.log(get20s(artists[5, 17]['name']));
+  // console.log(get20s(artists[17]['name']));
 }
+  // console.log(newArray);
+ 
 
 
 
@@ -260,8 +271,10 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array, number){
+  //  newArray = []{
+  //    artists.unshift
+  //  }
 }
    
 
@@ -281,10 +294,13 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function addArtist(array, artists){
 
+  array.push(artists)
+  return array;
+}
+  console.log(addArtist(artists, {id: 20, name:"Chelsea Ceballos", years:1998 - "current day", genre:"web design",nationality:"U.S. Citizen", bio:"The grass is green."}));
+ 
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
