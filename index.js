@@ -246,18 +246,19 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
-  const newArray= [];
+  // const newArray= [];
 
-  for(let i = 0; i <= artists.length-1; i++){ 
-    if(artists[i].years >= 1840 && artists[i].years <= 1999){ 
-      newArray.push(artists[i].name);
-      return array.name
-    }
+  // for(let i = 0; i <= artists.length; i++){ 
+  //   if(artists[i].years == '1904 - 1998'){ 
+  //     newArray.push(artists[i].name);
+  //     return array.name
+  //   } else if (artist[i].years == '1907 - 1954'){
+  //     return array.name
+  //   }
   }
-   console.log(get20s(artists[5, 17]['name']));
-  // console.log(get20s(artists[17]['name']));
-}
-  // console.log(newArray);
+  //  console.log(get20s(artists[5]['name']));
+  //  console.log(get20s(artists[17]['name']));
+
  
 
 
@@ -300,7 +301,7 @@ function addArtist(array, artists){
   array.push(artists)
   return array;
 }
-  console.log(addArtist(artists, {id: 20, name:"Chelsea Ceballos", years:1998 - "current day", genre:"web design",nationality:"U.S. Citizen", bio:"The grass is green."}));
+  console.log(addArtist(artists, {id: 20, name:"Chelsea Ceballos", years:'1998' - "current day", genre:"web design",nationality:"U.S. Citizen", bio:"The grass is green."}));
  
   
 
@@ -311,17 +312,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array, number){
-  // const newArray= [];
-  // for (let i = 0 ; i < array.length; i++){
-  //   if(array[i].includes(number)){
-  //     newArray.push(array[i])
-  //   }
-  // }
-  // return newArray;
+function lotsOfArt(array){
+  let newArray =[]
+  for (let i = 0; i < artists.length; i++ ){
+    if(artists.painting >= 100){
+      return artists.name
+    }
+  }
+
 }
 
-// console.log(lotsOfArt(artists, '100'));
+console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
